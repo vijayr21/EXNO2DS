@@ -104,18 +104,34 @@ sns.catplot(x="Gender",col="Survived",kind="count",data=df)
 ```
 df.boxplot(column="Age",by="Survived")
 ```
+
+<img width="548" height="392" alt="Screenshot (163)" src="https://github.com/user-attachments/assets/969b4930-4ef7-4c7f-9558-4e676111e5f3" />
+
 ```
 sns.scatterplot(x=df['Age'],y=df['Fare'])
 ```
+
+<img width="533" height="372" alt="Screenshot (164)" src="https://github.com/user-attachments/assets/3ec6624d-a5d4-46f4-965a-3fad93a0353c" />
+
 ```
 sns.catplot(x='Pclass',y='Age',hue='Gender',col='Survived',kind="box",data=df)
 ```
+<img width="903" height="413" alt="Screenshot (166)" src="https://github.com/user-attachments/assets/da4c36d0-63b0-4b28-bf34-ced26142f671" />
+
+```
+plt=sns.boxplot(x='Pclass',y='Age',hue='Gender',data=df)
+```
+
+<img width="543" height="358" alt="Screenshot (165)" src="https://github.com/user-attachments/assets/ebef3242-6350-487a-8a21-b75a8eb260af" />
+
+
 ```
 corr=df.corr(numeric_only=True)
 sns.heatmap(corr,annot=True)
 ```
+<img width="587" height="420" alt="Screenshot (167)" src="https://github.com/user-attachments/assets/116dbb08-6be9-4711-bdb4-348965302013" />
 
         
 
 # RESULT
-        <<INCLUDE YOUR RESULT HERE>>
+       Thus, the Exploratory Data Analysis on the given data set was performed successfully.
